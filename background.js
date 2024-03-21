@@ -60,7 +60,7 @@ chrome.action.onClicked.addListener(async () => {
       if (anan.startsWith('developer.')) {
         anan = anan.replace('developer.', 'dev.')
       }
-      await chrome.tabGroups.update(group, { title: anan })
+      await chrome.tabGroups.update(group, { title: group })
     }
   }
 })
